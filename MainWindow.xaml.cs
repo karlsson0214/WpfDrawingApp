@@ -42,8 +42,8 @@ namespace WpfDrawingApp
             if (shapes.SelectedItem != null)
             {
 
-                String selectedShape = shapes.SelectedItem;
-                if (selectedShape == "circle")
+                String selectedShape = (string)((ListBoxItem)(shapes.SelectedItem)).Tag;
+                if (selectedShape == "Circle")
                 {
                     output.Text = "circle";
                 }
